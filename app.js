@@ -6,7 +6,7 @@ var server = http.createServer(function (request, response) {
 	response.writeHead(200, {"Content-Type": "text/plain"});
 
   if (queryData.name) {
-    // user told us their name in the GET request, ex: http://host:3000/?name=Tom
+    // User told us their name in the GET request, ex: http://host:3000/?name=John Doe
 		response.end(`Hello ${queryData.name}, Welcome to WeJapa Internships\n`);
   } else {
     response.end(`Hello World, Welcome to WeJapa Internships\n`);
